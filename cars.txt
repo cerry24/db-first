@@ -1,0 +1,26 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+Table name: second_hand_cars
+
+chassis_number                      STRING   -  VARCHAR(17)             PRIMARY_KEY
+manufacturer                        STRING   -  VARCHAR(40)             UNIQUE NOTNULL
+model                               STRING   -  VARCHAR(70)             NOTNULL
+production_year                     DATE     -  YEAR                    NOTNULL
+price                               FLOAT    -  FLOAT(11,2)             NOTNULL
+description                         STRING   -  TEXT                    NULL
+bodywork_color                      STRING   -  VARCHAR(35)             NOTNULL
+interior_color                      STRING   -  VARCHAR(55)             NOTNULL
+kilometrage                         FLOAT    -  FLOAT(8,2)              NOTNULL
+fuel_alimentation                   STRING   -  VARCHAR(20)             NOTNULL
+gearbox                             STRING   -  VARCHAR(35)             NULL
+drive                               STRING   -  VARCHAR(3)              NULL
+seats_number                        INTEGER  -  TINYINT                 NOTNULL
+doors_number                        INTEGER  -  TINYINT                 NOTNULL
+emission_class                      STRING   -  VARCHAR(10)             NOTNULL
+previous_owners_number              INTEGER  -  TINYINT                 NOTNULL DEAFAULT(1)
+horsepower                          INTEGER  -  SMALLINT                NULL
+torque                              INTEGER  -  SMALLINT                NULL
+weight                              FLOAT    -  FLOAT(6,2)              NULL
+length                              FLOAT    -  FLOAT(3,2)              NULL
+width                               FLOAT    -  FLOAT(3,2)              NULL
+height                              FLOAT    -  FLOAT(3,2)              NULL
